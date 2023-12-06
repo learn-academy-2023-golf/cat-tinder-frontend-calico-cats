@@ -4,17 +4,17 @@ import Home from '../pages/Home'
 import CatNew from '../pages/CatNew'
 import CatShow from '../pages/CatShow'
 import CatIndex from '../pages/CatIndex'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
     return (
         <>
             <div className='Header'>
                 <img className='catLogo'src={catLogo} />
-                <Link to="/"><h2>WHISKERS</h2></Link>
-                <Link to="/catindex"><h2>Browse Cats</h2></Link>
-                <Link to="/catshow"><h2>Find Cat</h2></Link>
-                <Link to="/catnew"><h2>Create Profile</h2></Link>
+                <NavLink to="/">WHISKERS</NavLink>
+                <NavLink to="/catindex">Browse Cats</NavLink>
+                <NavLink to="/catshow">Find Cat</NavLink>
+                <NavLink to="/catnew">Create Profile</NavLink>
             </div>
         </>
     )
