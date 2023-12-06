@@ -5,7 +5,7 @@ const NotFound = () => {
     return (
         <>
             <div className='NotFound'>
-            <img className='catError'src={catError} />
+                <img className='catError'src={catError} />
             </div>
         </>
     )

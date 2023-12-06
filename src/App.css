@@ -1,3 +1,4 @@
+/* Header and Footer */
 .Header {
   background-color: #B28DFF;
   color: #FFFFFF;
@@ -8,6 +9,11 @@
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.catLogo {
+  height: 50px;
+  width: 50px;
 }
 
 .Footer {
@@ -21,21 +27,22 @@
   text-align: center;
 }
 
-.NotFound {
-background-color: #DF9FA0;
-color: #FFFFFF;
-height: 100%;
-}
-
-.catLogo {
-  height: 50px;
-  width: 50px;
-}
-
-body {
+/* Home Page */
+.home-container {
+  height: 100vh;
   padding-top: 50px;
   padding-bottom: 0%;
-  background-color: #DF9FA0;
+  background-image: url("https://th-thumbnailer.cdn-si-edu.com/0kwEU0Ok80WPzlpfdkZ7-TxI7I8=/1000x750/filters:no_upscale():focal(700x633:701x634)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/c8/9f/c89f5083-bf84-4a2e-87cd-0ec928adaa17/white-house-cats2.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+/* Not Found Page */
+.NotFound {
+height: 100vh;
+padding-top: 50px;
+padding-bottom: 0%;
+background-color: #DF9FA0;
 }
 
 .catError {
@@ -46,6 +53,12 @@ body {
   margin-bottom: 0%;
 }
 
-html {
-  background-color: #DF9FA0;
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
 }
