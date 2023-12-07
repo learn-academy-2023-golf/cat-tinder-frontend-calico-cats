@@ -37,6 +37,23 @@
   text-align: center;
 }
 
+/* Read Components */
+.catIndex-styling{
+  height: 100vh;
+  padding-top: 50px;
+  background-color: #DF9FA0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.catShow-styling{
+  height: 100%;
+  padding-top: 100px;
+  background-color: #DF9FA0;
+  text-align: center;
+}
+
 /* Not Found Page */
 .NotFound {
 height: 100vh;
