@@ -11,10 +11,10 @@ const Header = () => {
         <>
             <div className='Header'>
                 <img className='catLogo'src={catLogo} />
-                <NavLink to="/">WHISKERS</NavLink>
-                <NavLink to="/catindex">Browse Cats</NavLink>
-                <NavLink to="/catshow">Find Cat</NavLink>
-                <NavLink to="/catnew">Create Profile</NavLink>
+                <NavLink className="nav-link" to="/">WHISKERS</NavLink>
+                <NavLink className="nav-link" to="/catindex">Browse Cats</NavLink>
+                <NavLink className="nav-link" to="/catshow">Find Cat</NavLink>
+                <NavLink className="nav-link" to="/catnew">Create Profile</NavLink>
             </div>
         </>
     )

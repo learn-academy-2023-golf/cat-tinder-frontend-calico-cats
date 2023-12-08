@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router';
 // Components
 import Header from './components/Header';
@@ -16,11 +16,37 @@ import mockCats from "./mockCats"
 
 function App() {
 
-  const [cats, setCats] = useState(mockCats)
+  const [cats, setCats] = useState([])
+    console.log(cats)
+
+  useEffect(() => {
+    readCat()
+  }, [])
+
+  const readCat = () => {
+    fetch("http://localhost:3000/cats")
+      .then((response) => response.json())
+      .then((payload) => setCats(payload))
+      .catch((error) => console.log(error))
+  }  
 
   const createCat = (cat) => {
-    console.log(cat)
+    fetch("http://localhost:3000/cats", {
+      body: JSON.stringify(cat), 
+      headers: {
+        "Content-Type": "application/json"
+      }, 
+      method: "POST"
+    })
+    .then((response) => response.json())
+    .then(() => readCat())
+    .catch((errors) => console.log(errors))
   }
+
+  fetch("rails-api-endpoint")
+    .then((response) => response.json())
+    .then((payload) => console.log(payload))
+    .catch((error) => console.log(error))
 
   return (
       <>
