@@ -1,18 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap"
+
 const CatIndex = ({ cats }) => {
     return (
-        <main className='catIndex-styling'>
+        <main className='CatIndex'>
             {cats.map((cat, index) => {
                 return(
                     <Card
                         style={{
-                            width: "14rem"
+                            width: "14rem",
+                            height: "20rem"
                         }}
                         key={index}
                     >
-                        <img alt={`profile of a cat named ${cat.name}`} src={cat.image} />
+                        <img alt={`profile of a cat named ${cat.name}`} src={cat.image} className="cardImage" />
                         <CardBody>
                             <CardTitle tag="h5">{cat.name}</CardTitle>
                             <CardSubtitle className="mb-2 text-muted" tag="h6">

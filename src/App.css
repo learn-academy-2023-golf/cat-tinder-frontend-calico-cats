@@ -37,29 +37,55 @@
   text-align: center;
 }
 
-/* Read Components */
-.catIndex-styling{
+/* Create Page */
+.CatNew{
+  background-color: #DF9FA0;
+}
+
+.CatNew1{
+  padding-top: 75px;
+  text-align: center;
+}
+
+.CatNew2{
+  height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Read Pages */
+.CatIndex{
   height: 100vh;
   padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #DF9FA0;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.catShow-styling{
+.cardImage {
+  height: 200px;
+}
+
+.CatShow{
   height: 100%;
-  padding-top: 100px;
+  padding-top: 50px;
   background-color: #DF9FA0;
   text-align: center;
 }
 
 /* Not Found Page */
 .NotFound {
-height: 100vh;
-padding-top: 50px;
-padding-bottom: 0%;
-background-color: #DF9FA0;
+  height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 0%;
+  background-color: #DF9FA0;
 }
 
 .catError {

@@ -5,7 +5,7 @@ const CatShow = ( { cats }) => {
     const { id } = useParams()
     let currentCat = cats.find((cat) => cat.id === +id)
     return (
-        <div className='catShow-styling'>
+        <div className='CatShow'>
             {currentCat && (
                 <>
                     <h2>I am {currentCat.name}, age {currentCat.age}.</h2>

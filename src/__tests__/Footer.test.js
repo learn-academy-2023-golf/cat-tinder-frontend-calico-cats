@@ -10,7 +10,7 @@ describe("<Footer />", () => {
             </BrowserRouter>
         )
 
-        const authors = screen.getByText("Created By: Enrique, Sean, Jeffrey")
+        const authors = screen.getByText("Created By: Enrique, Jeffrey, & Sean")
         expect(authors).toBeInTheDocument()
     })
 
@@ -22,7 +22,7 @@ describe("<Footer />", () => {
         )
 
         screen.getByRole('heading', {
-            name: /Created By: Enrique, Sean, Jeffrey/i
+            name: /Created By: Enrique, Jeffrey, & Sean/i
         })
     })
 })
