@@ -97,11 +97,10 @@
 }
 
 /* Links */
-a {
+.nav-link {
   text-decoration: none;
 }
 
-a:visited {
-  color: inherit;
-  text-decoration: none;
+.nav-link.active a {
+  color: red;
 }
