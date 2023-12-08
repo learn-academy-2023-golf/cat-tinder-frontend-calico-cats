@@ -24,7 +24,8 @@ const CatNew = ({createCat}) => {
     }
 
     return (
-        <>  <div className="CatNew">
+        <>
+            <div className="CatNew">
                 <div className="CatNew1">
                     <h2>Create A New Cat Profile</h2>
                 </div>
