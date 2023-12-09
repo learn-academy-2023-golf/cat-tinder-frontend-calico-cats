@@ -14,13 +14,14 @@ const CatIndex = ({ cats }) => {
                         }}
                         key={index}
                     >
-                        <img alt={`profile of a cat named ${cat.name}`} src={cat.image} className="cardImage" />
-                        <CardBody>
+                        <CardBody className='cards'>
+                            <img alt={`profile of a cat named ${cat.name}`} src={cat.image} className="cardImage" />
                             <CardTitle tag="h5">{cat.name}</CardTitle>
                             <CardSubtitle className="mb-2 text-muted" tag="h6">
                                 Age: {cat.age}
                             </CardSubtitle>
-                            <NavLink to={`/catshow/${cat.id}`} className="nav-link">See More Details
+                            <NavLink to={`/catshow/${cat.id}`} className="nav-link">
+                                <button>See More Details</button>
                             </NavLink>
                         </CardBody>
                     </Card>

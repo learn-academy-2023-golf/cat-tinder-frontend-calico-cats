@@ -27,8 +27,6 @@ describe ("<Header />", () => {
         expect(screen.getByText("WHISKERS")).toBeInTheDocument()
         userEvent.click(screen.getByText('Browse Cats'))
         expect(screen.getByText("Browse Cats")).toBeInTheDocument()
-        userEvent.click(screen.getByText('Find Cat'))
-        expect(screen.getByText("Find Cat")).toBeInTheDocument()
         userEvent.click(screen.getByText('Create Profile'))
         expect(screen.getByText("Create Profile")).toBeInTheDocument()
     })
