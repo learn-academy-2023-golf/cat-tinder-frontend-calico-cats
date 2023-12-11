@@ -10,7 +10,7 @@ const CatShow = ( { cats, deleteCat }) => {
         <div className='CatShow'>
             {currentCat && (
                 <>
-                    <h2>I am {currentCat.name}, age {currentCat.age}.</h2>
+                    <h2>I am {currentCat.name}, age {currentCat.age} (Cat years: {currentCat.age * 7}).</h2>
                     <h3>I enjoy {currentCat.enjoys}.</h3>
                     <img alt={currentCat.name} src={currentCat.image} className='showImage'/>
                     <NavLink to={`/catedit/${currentCat.id}`} className="nav-link">

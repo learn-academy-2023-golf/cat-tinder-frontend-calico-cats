@@ -9,6 +9,8 @@
   position: fixed;
   top: 0;
   width: 100%;
+  font-weight: bold;
+  font-size: larger;
 }
 
 .catLogo {
@@ -87,6 +89,7 @@
 
 .cardImage {
   height: 200px;
+  width: 150px;
 }
 
 .CatShow{
@@ -118,15 +121,30 @@
 }
 
 /* Links */
-.nav-link {
+a {
   text-decoration: none;
 }
 
-.nav-link.active a {
-  color: red;
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color:darkmagenta;
+  text-decoration: none;
+}
+
+button {
+  background-color:#FFFFFF;
 }
 
 button:hover {
-  background-color: #B28DFF;
+  background-color:darkmagenta;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  color: #FFFFFF;
 }
