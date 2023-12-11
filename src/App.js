@@ -38,14 +38,34 @@ function App() {
       }, 
       method: "POST"
     })
+      .then((response) => response.json())
+      .then(() => readCat())
+      .catch((errors) => console.log(errors))
+  }
+
+  const updateCat = (cat, id) => {
+    fetch(`http://localhost:3000/cats/${id}`, {
+      body: JSON.stringify(cat),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "PATCH"
+    })
     .then((response) => response.json())
     .then(() => readCat())
     .catch((errors) => console.log(errors))
   }
 
-  const updateCat = (cat, id) => {
-    console.log("cat:", cat)
-    console.log("id:", id)
+  const deleteCat = (id) => {
+    fetch(`http://localhost:3000/cats/${id}`, {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "DELETE"
+    })
+    .then((response) => response.json())
+    .then(() => readCat())
+    .catch((errors) => console.log(errors))
   }
 
   fetch("rails-api-endpoint")
@@ -59,7 +79,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/catindex" element={<CatIndex cats={cats} />} />
-          <Route path="/catshow/:id" element={<CatShow cats={cats} />} />
+          <Route path="/catshow/:id" element={<CatShow cats={cats} deleteCat={deleteCat} />} />
           <Route path="/catnew" element={<CatNew createCat={createCat} />} />
           <Route path="/catedit/:id" element={<CatEdit cats={cats} updateCat={updateCat}/>} />
           <Route path="*" element={<NotFound />} />
