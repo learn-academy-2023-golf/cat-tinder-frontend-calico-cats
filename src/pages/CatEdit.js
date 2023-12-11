@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Form, FormGroup, Label, Input, Button, Col } from 'reactstrap'
+import { Form, FormGroup, Label, Input, Col } from 'reactstrap'
 import { useNavigate, useParams } from 'react-router-dom'
 
 const CatEdit = ({ cats, updateCat }) => {
@@ -75,9 +75,9 @@ const CatEdit = ({ cats, updateCat }) => {
                             />
                             </Col>
                         </FormGroup>
-                            <Button onClick={handleSubmit}>
+                            <button onClick={handleSubmit}>
                                 Update
-                            </Button>
+                            </button>
                     </Form>
                 </div>
             </div>

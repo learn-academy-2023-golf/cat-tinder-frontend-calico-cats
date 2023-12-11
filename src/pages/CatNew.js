@@ -73,9 +73,9 @@ const CatNew = ({createCat}) => {
                                 />
                             </Col>
                         </FormGroup>
-                        <Button onClick={handleSubmit}>
+                        <button onClick={handleSubmit}>
                             Submit Profile
-                        </Button>
+                        </button>
                     </Form>
                 </div>
             </div>
